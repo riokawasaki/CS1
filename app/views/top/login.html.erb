@@ -1,0 +1,12 @@
+<%= form_with url: '/top/login', method: :post, local: true do |f| %>
+    <h3>ログイン</h3>
+    <%= f.label :uid, 'ユーザーID' %>
+    <%= f.text_field :uid %>
+    <%= f.label :pass, 'パスワード' %>
+    <%= f.password_field :pass %>
+    <%= f.submit 'ログイン' %>
+<% end %>
+<br>
+<div id="signup-form">
+    <%= link_to '新規登録はこちら', top_signup_page_path %> <!-- 新規登録ページへのリンク -->
+</div>
