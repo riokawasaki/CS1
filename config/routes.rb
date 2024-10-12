@@ -15,3 +15,6 @@ Rails.application.routes.draw do
   get 'top/signup_page', to: 'top#signup_page' # 新規登録画面へのルート
 
 end
+
+
+
